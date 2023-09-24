@@ -1,0 +1,53 @@
+body {
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.coin img {
+    width: 80px;  /* Further reduced size */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation: spin 5s linear;
+    animation: drop 1s forwards, spin 3s linear 1s infinite; 
+}
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateY(360deg);
+    }
+}
+@keyframes drop {
+    0% {
+        top: -50%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0; /* Hide initially */
+}
+
+.card {
+    background-color: #1E1E1E;
+    width: 100px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #2A2A2A;
+    border-radius: 5px;
+}
