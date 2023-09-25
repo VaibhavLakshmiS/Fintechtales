@@ -5,19 +5,17 @@ body {
     height: 100vh;
     margin: 0;
 }
-
-
 .coin img {
-    width: 80px;  /* Further reduced size */
+    width: 150px;
     height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
-    animation: spin 5s linear;
-    animation: drop 1s forwards, spin 3s linear 1s infinite; 
+    /* animation: drop 1s forwards, spin 3s linear 1s infinite, splitCoin 2s 10s forwards; */
+    animation: drop 2s forwards, spin 2s linear 2s;
 }
+
 @keyframes spin {
     0% {
         transform: translate(-50%, -50%) rotateY(0deg);
@@ -26,6 +24,7 @@ body {
         transform: translate(-50%, -50%) rotateY(360deg);
     }
 }
+
 @keyframes drop {
     0% {
         top: -50%;
@@ -36,10 +35,28 @@ body {
         opacity: 1;
     }
 }
+
+.coin-icon img {
+    width: 20px;   /* Adjust this to the size you want the coin to reduce to */
+    height: auto;
+    transition: all 2s ease;
+}
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;  /* Some padding to keep links away from screen edge */
+}
+
+
+
 .card-container {
     display: flex;
     justify-content: space-around;
-    opacity: 0; /* Hide initially */
+    opacity: 0;
+    transition: opacity 2s; 
 }
 
 .card {
@@ -50,4 +67,39 @@ body {
     padding: 20px;
     border: 1px solid #2A2A2A;
     border-radius: 5px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #2D2D2D;  /* dark background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+    transition: opacity 0.3s ease;
+    opacity: 0;  /* starts off hidden */
+}
+
+.toolbar a {
+    text-decoration: none;
+    color: white;  /* text color */
+    font-family: 'Roboto', sans-serif;  /* modern font */
+    margin: 0 15px;
+    transition: color 0.2s ease;
+}
+
+.toolbar a:hover {
+    color: #007BFF;  /* accent color on hover */
+}
+
+/* Add an icon beside the website name, for example */
+.toolbar .site-logo {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar .site-logo img {
+    height: 30px;  /* logo height */
+    margin-right: 10px;  /* space between logo and text */
 }
