@@ -29,3 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
     const coinAnimationDuration = 5000; // Adjust this to the duration of your coin's animation in milliseconds
     setTimeout(displayCards, coinAnimationDuration);
 });
+tr
