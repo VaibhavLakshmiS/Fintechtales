@@ -44,3 +44,18 @@ window.addEventListener('resize', function() {
 });
 
 init();
+setTimeout(function() {
+    // Fade out the cubes
+    let fadeOutInterval = setInterval(function() {
+        renderer.domElement.style.opacity = parseFloat(renderer.domElement.style.opacity) - 0.1;
+        if (renderer.domElement.style.opacity <= 0) {
+            clearInterval(fadeOutInterval);
+            renderer.domElement.style.display = 'none'; // Hide the cubes completely after fade out
+        }
+    }, 100); // Decrease opacity every 100ms
+
+    // Display the title and button
+    document.querySelector('.title').style.opacity = '1';
+    document.querySelector('.button').style.opacity = '1';
+
+}, 5000);

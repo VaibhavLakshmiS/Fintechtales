@@ -47,3 +47,43 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+/* ... existing CSS ... */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    color:#00BFFF; /* Or the color you prefer */
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 1s ease-in-out;  /* Fade-in effect */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color:#00BFFF; /* Or the color you prefer */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 1s ease-in-out;  /* Fade-in effect */
+}
+
+.button:hover {
+    background-color: #008;
+}
+
+
+.title, .learn {
+    opacity: 0; /* Make them initially invisible */
+    transition: opacity 1s ease-in-out; /* Transition effect for the fade-in */
+}
