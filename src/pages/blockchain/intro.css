@@ -1,0 +1,27 @@
+body {
+    background-color: #121212;  /* Very dark gray, almost black */
+    color: #ffffff;  /* White text */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition for color changes */
+}
+
+a {
+    color: #bb86fc;  /* Bright color for links */
+    transition: color 0.3s;  /* Smooth transition for link colors */
+}
+
+a:hover {
+    color: #3700b3;  /* A different color for hovering over links */
+}
+
+/* You may also want to adjust colors for other elements, like buttons, input fields, etc. */
+button, input[type="submit"], input[type="button"] {
+    background-color: #bb86fc;  /* Button background color */
+    color: #121212;  /* Text color on buttons */
+    border: none;  /* No border for a cleaner look */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition for button colors */
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #3700b3;  /* Button background color for hover state */
+    color: #ffffff;  /* Text color on buttons for hover state */
+}
