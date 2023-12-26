@@ -24,7 +24,7 @@ Fintechtales is an evolving educational platform focused on FinTech, such as blo
 
 ## Getting Started
 
-To explore the current version of Fintales:
+To explore the current version of FinTechtales:
 
 1. **Clone the Repository**:
 2. **Navigate to the Directory**:
