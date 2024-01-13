@@ -1,0 +1,22 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!-- Drop Shadow Filter -->
+  <defs>
+    <filter id="f1" x="0" y="0" width="150%" height="150%">
+      <feOffset result="offOut" in="SourceAlpha" dx="5" dy="5" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+
+  <!-- Gradient for 3D effect -->
+  <radialGradient id="gold-gradient" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" style="stop-color:#FFD700; stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#B8860B; stop-opacity:1" />
+  </radialGradient>
+
+  <!-- Outer circle with gradient fill -->
+  <circle cx="100" cy="100" r="95" fill="url(#gold-gradient)" stroke="#B8860B" stroke-width="3" filter="url(#f1)" />
+  <!-- Dollar symbol in gold color -->
+  <text x="50%" y="50%" font-family="Arial" font-size="70" fill="url(#gold-gradient)" dy=".3em" text-anchor="middle">$</text>
+</svg>
