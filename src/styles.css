@@ -1,7 +1,6 @@
 body {
     background-color: #121212;
-    /* overflow: hidden; */
-    overflow-y: auto;
+    overflow: hidden;
     position: relative;
     height: 100vh;
     margin: 0;
@@ -45,7 +44,6 @@ body {
         opacity: 0;
     }
 }
-
 .site-name {
     color: white;
     font-family: 'Muli', sans-serif; 
@@ -101,22 +99,12 @@ body {
     gap: 20px;
     padding-right: 20px;
 }
-
 .project-card {
-    margin: 10px 1%;
     perspective: 1000px;
     width: 250px;
     height: 250px;
-    opacity: 0;  
+    opacity: 0;  /* starts off hidden */
     transition: opacity 0.3s ease;
-    position: relative;   /* To ensure z-index works */
-    flex-basis: calc(18% - 10px); /
-}
-
-
-
-.project-card:hover {
-    z-index: 10;  /* Raises the card above its siblings on hover */
 }
 
 .card-inner {
@@ -124,13 +112,12 @@ body {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.5s;  
-    background-color: #1E1E1E;
+    transition: transform 0.3s;
+    background-color: #1E1E1E;  /* adjusted for dark theme */
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .project-card:hover .card-inner {
@@ -147,7 +134,7 @@ body {
     justify-content: center;
     padding: 2rem;
     border-radius: 12px;
-    color: white;
+    color: white;  /* adjusted for dark theme */
 }
 
 .card-front {
@@ -157,12 +144,12 @@ body {
 
 .card-back {
     transform: rotateY(180deg);
-    background-color: #2D2D2D;
+    background-color: #2D2D2D;  /* adjusted for dark theme */
 }
 
 .project-card img {
-    width: 80%;
-    border-radius: 2px;
+    width: 60%;
+    border-radius: 8px;
 }
 
 .project-card h3, .project-card p, .project-card a {
@@ -171,35 +158,35 @@ body {
 }
 
 .project-card a {
-    color: #007BFF;
+    color: #007BFF;  /* accent color */
     transition: color 0.3s;
 }
 
 .project-card a:hover {
     color: #82c0ff;
+
 }
 
 #projects {
-    margin-top: 60px;
-    margin-left: 20px;
+    margin-top: 60px;  /* or adjust this value to your liking */
+    margin-left:20px;
 }
+
 
 .project-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
+    padding: 10px;  /* Adds a little padding around the entire grid */
 }
 
 .project-card {
-    perspective: 1500px;
+    perspective: 1500px; /* Increase perspective for a gentler flip effect */
     flex-basis: calc(20% - 10px);
-    transition: box-shadow 0.3s ease;
+    margin: 10px 5px;  /* Increase the margin between cards */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow changes */
 }
 
 .project-card:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);  /* Enhanced shadow on hover */
 }
-
-
