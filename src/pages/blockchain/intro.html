@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Sequence</title>
+    <link rel="stylesheet" href="intro.css">
+    <script src="particles.js-master/particles.js-master/particles.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="blockchain-container">
+        <div class="blockchain">
+            <a href="link-for-image-1" class="block">
+                <img src="bloc.png" alt="Introduction">
+            </a>
+            <a href="link-for-image-2" class="block">
+                <img src="POC.png" alt="Proof of Concept">
+            </a>
+            <a href="link-for-image-3" class="block">
+                <img src="simu.png" alt="Simulator">
+            </a>
+            <a href="link-for-image-4" class="block">
+                <img src="case.png" alt="Case Studies">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 5500,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#FAFAFA", "#A3C3D9", "#FFC3E9", "#D1A3FF"]
+                },
+                "size": {
+                    "value": 1.5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1.5,
+                        "size_min": 0.3
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 0.1,
+                        "opacity_min": 0.3
+                    }
+                },
+                "move": {
+                    "speed": 0.5,
+                    "direction": "none",
+                    "random": true,
+                    "out_mode": "out"
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                "onclick": {
+                    "enable": false
+                },
+                "resize": true
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+</body>
+</html>

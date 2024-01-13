@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Assuming you want a black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blockchain-container {
+    position: relative;
+    display: flex;
+}
+
+.blockchain {
+    display: inline-flex;
+    align-items: center;
+    position: relative; /* Needed for absolute positioning of the lines */
+}
+
+.block {
+    position: relative; /* Needed for absolute positioning of the lines */
+    margin: 0 20px; /* Adjust spacing between blocks as needed */
+}
+
+.block img {
+    display: block; /* Removes bottom space below images */
+    height: 100px; /* Example height, adjust as needed */
+    width: auto; /* Adjust width as needed or keep it auto */
+}
+
+.block:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Start the line at the right side of the block */
+    width: 40px; /* Width of the connecting line */
+    height: 2px; /* Height of the connecting line */
+    background-color: #ffffff; /* Color of the connecting line */
+    transform: translateY(-50%);
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b; /* This color should match the one in your image */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
