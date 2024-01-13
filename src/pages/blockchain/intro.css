@@ -1,34 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
-}
-
-.background-image {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: black; /* Assuming you want a black background */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('bg.jpg') no-repeat center center fixed; 
-    background-size: cover;
 }
 
-.icon-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.blockchain-container {
+    position: relative;
+    display: flex;
 }
 
-/* .icon {
-    width: 100px;
-    height: 100px;
-    background: /* Icon background or style */
+.blockchain {
+    display: inline-flex;
+    align-items: center;
+    position: relative; /* Needed for absolute positioning of the lines */
+}
 
-.icon:hover {
-    transform: scale(1.1);
+.block {
+    position: relative; /* Needed for absolute positioning of the lines */
+    margin: 0 20px; /* Adjust spacing between blocks as needed */
+}
+
+.block img {
+    display: block; /* Removes bottom space below images */
+    height: 100px; /* Example height, adjust as needed */
+    width: auto; /* Adjust width as needed or keep it auto */
+}
+
+.block:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Start the line at the right side of the block */
+    width: 40px; /* Width of the connecting line */
+    height: 2px; /* Height of the connecting line */
+    background-color: #ffffff; /* Color of the connecting line */
+    transform: translateY(-50%);
 }
