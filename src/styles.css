@@ -114,6 +114,7 @@ body {
 }
 
 
+
 .project-card:hover {
     z-index: 10;  /* Raises the card above its siblings on hover */
 }
@@ -160,8 +161,8 @@ body {
 }
 
 .project-card img {
-    width: 60%;
-    border-radius: 8px;
+    width: 80%;
+    border-radius: 2px;
 }
 
 .project-card h3, .project-card p, .project-card a {
