@@ -30,6 +30,11 @@ To explore the current version of FinTechtales:
 2. **Navigate to the Directory**:
 3. **Run Java Backend** (if applicable):
 4. **Open the Website**: View `index.html` in a browser.
-
-Fintechtales is licensed under the [MIT License](LINK_TO_LICENSE).
 ---
+
+## Some samples of the work done as of now 
+<img width="761" alt="samples" src="https://github.com/VaibhavLakshmiS/Fintechtales/assets/114008903/1343e740-e7dd-46ce-9001-6dc4cec9d798">
+<img width="894" alt="Screenshot 2024-01-13 171732" src="https://github.com/VaibhavLakshmiS/Fintechtales/assets/114008903/e5bd54d4-68a5-4a9f-8edb-730f1e5e719c">
+<img width="958" alt="Screenshot 2024-01-13 171438" src="https://github.com/VaibhavLakshmiS/Fintechtales/assets/114008903/5a392e1e-dacd-4b10-9123-6d06175f302d">
+
+<img width="899" alt="Screenshot 2024-01-13 171754" src="https://github.com/VaibhavLakshmiS/Fintechtales/assets/114008903/8c145974-c6b7-4a9a-bc71-14e25afae9ad">
